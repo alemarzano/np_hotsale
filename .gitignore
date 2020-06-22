@@ -1,0 +1,16 @@
+sources
+*.xlsx
+*.pptx
+*.psd
+docs/images/capsulas
+docs/images/icons
+docs/images/maquinas
+docs/images/bannerofertas_fondo.jpg
+docs/images/cucarda-enmaquina.png
+docs/css/ec-hot-sale_nuestro.css
+docs/js/angularjs.js
+docs/js/bts.js
+docs/js/countdown.js
+docs/js/counterBomba.js
+docs/js/jquery331.js
+docs/js/owl.carousel.js

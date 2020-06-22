@@ -7,15 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7" />
   <!-- Estilos ECommerce Nespresso -->
-  <link href="css/ec-hot-sale.css?" rel="stylesheet" />
-  <link rel="stylesheet"
-    href="https://www.nespresso.com/ecom/medias/sys_master/public/12370805981214/owl.carousel.min.css?" />
-  <link rel="stylesheet"
-    href="https://www.nespresso.com/ecom/medias/sys_master/public/12370806046750/owl.theme.default.css?" />
+  <link href="css/ec-hot-sale.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="css/owl.theme.default.css" />
 </head>
 
 <body class="ec-grid" ng-controller="HotSaleController" id="transaccional">
-  <!-- LOADER -->
+  <!-- loader -->
   <div id="loader-wrapper">
     <div class="bag">
       <?xml version="1.0" encoding="utf-8"?>
@@ -41,201 +39,161 @@
 
     <div class="loader-section "></div>
   </div>
-  <!-- END LOADER -->
-
-  <!-- Oferta Bomba -->
-  <div class="bg-ofertaBomba row h-100 align-items-stretch">
-      <div class=" col-xs-12 col-sm-3 text-center align-self-center">
-          <div class="row justify-content-between counterOferta">
-            <div class="col-12 my-3">
-                <h1>OFERTA BOMBA</h1>
-            </div>
-            <div class="col-12 mb-2">
-                <h3>FINALIZA EN</h3>
-            </div>
-            <div class="col-4 col-sm-12 col-md-4">
-              <p id="hoursBomb"></p>
-              <span class="ec_label">Hr</span>
-            </div>
-            <div class=" col-4 col-sm-12 col-md-4">
-              <p id="minBomb"></p>
-              <span class="ec_label">Min</span>
-            </div>
-            <div class=" col-4 col-sm-12 col-md-4">
-              <p id="secBomb"></p>
-              <span class="ec_label">Seg</span>
-            </div>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-4 mt-5 mt-md-0 d-flex align-items-center justify-content-center">
-            <img src="http://placehold.jp/250x300.png" class="my-3 my-md-0 img-fluid">
-      </div>
-      <div id="maquinasBomba" class="col-xs-12 col-sm-5 align-self-center ofertaTexto">
-        <h1>Nombre producto</h1>
-        <p class="my-2 ofertaDescripcion"><span class="d-block ec-weight-bold">ENVÍO GRATUITO</span>
-          <span class="d-block">6 CUOTAS SIN INTERÉS</span> DE $1.299,00</p>
-        <p class="ofertaDescripcionXs">OBTENÉ<span class="ec-weight-bold d-block">$2.400 DE CRÉDITO EN CAFÉ</span></p>
-        <div  class="d-flex justify-content-start align-items-center align-items-stretch my-3">
-          <div class="align-self-center mr-2">
-            <p>Precio anterior: <span class="ec-pastPrice d-block ofertaDescripcion">$5.990</span>
-            </p>
-          </div>
-          <div class="ec-price mx-2">
-            <p class="ec-text-white"><span class="ec-priceNumber">$3.594</span></p>
-          </div>
-        </div>
-        <div class="d-flex align-items-center">
-          <a class="ec-boton mr-2" href="#" ng-click="mostrarModal(1,false)">Más información</a>
-          <div id="botones_maquinas">
-            <div class="add-to-bag" data-product-id="VC30-AR-BK-NE" data-button-size="medium"
-              id="btn-add-to-bag-maquinas">Comprar Máquina
-            </div>
-          </div>
-        </div>
-        
-      </div>
-    </div>
 
   <!-- Imagen principal -->
   <header class="ec-header">
     <div class="ec-container"></div>
   </header>
-  <!-- Cierre de imagen principal -->
 
-  <!-- Contenedor principal -->
-  <div class="ec-container">
-    <!-- Counter -->
-    <section class="my-3 my-sm-4">
-      <div class="row text-center ec_counter d-flex justify-content-center">
-        <div class="col-sm-3 align-self-center my-3 my-sm-0">
-          <span>QUEDAN</span>
-        </div>
-        <div class="col-md-6">
-          <div class="row d-flex justify-content-between">
-            <div class="col-3">
-              <p id="days"></p>
-              <span class="ec_label">Días</span>
-            </div>
-            <div class="col-3">
-              <p id="hours"></p>
-              <span class="ec_label">Horas</span>
-            </div>
-            <div class="col-3">
-              <p id="min"></p>
-              <span class="ec_label">Minutos</span>
-            </div>
-            <div class="col-3">
-              <p id="sec"></p>
-              <span class="ec_label">Segundos</span>
+
+  <!-- Máquinas -->
+  <section>
+    <div class="ec-container">
+
+
+      <!-- Counter -->
+      <div class="my-3 my-sm-4">
+        <div class="row text-center ec_counter d-flex justify-content-center">
+          <div class="col-sm-3 align-self-center my-3 my-sm-0">
+            <span>QUEDAN</span>
+          </div>
+          <div class="col-md-6">
+            <div class="row d-flex justify-content-between">
+              <div class="col-3">
+                <p id="days"></p>
+                <span class="ec_label">Días</span>
+              </div>
+              <div class="col-3">
+                <p id="hours"></p>
+                <span class="ec_label">Horas</span>
+              </div>
+              <div class="col-3">
+                <p id="min"></p>
+                <span class="ec_label">Minutos</span>
+              </div>
+              <div class="col-3">
+                <p id="sec"></p>
+                <span class="ec_label">Segundos</span>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-sm-3 align-self-center my-3 my-sm-0">
-          <span>DE BENEFICIOS</span>
+          <div class="col-sm-3 align-self-center my-3 my-sm-0">
+            <span>DE BENEFICIOS</span>
+          </div>
         </div>
       </div>
-    </section>
-    <!-- Cierre de counter -->
 
-    <!-- Texto principal -->
-    <section class="my-4">
-      <div class="row d-flex justify-content-center">
-        <div class="col-xs-12 col-sm-8 text-uppercase text-center p-0">
-          <h2>
-            Comprá tu máquina con
-            <span class="ec-main-color ec-weight-bold">40% OFF</span> y recibí
-            <span class="ec-main-color ec-weight-bold">$1.300</span> de
-            crédito en café
-          </h2>
+      <!-- Texto principal -->
+      <div class="my-4">
+        <div class="row d-flex justify-content-center">
+          <div class="col-xs-12 col-sm-8 text-uppercase text-center p-0">
+            <h2>
+              Comprá tu máquina con
+              <span class="ec-main-color ec-weight-bold">40% OFF</span> y recibí
+              <span class="ec-main-color ec-weight-bold">$1.300</span> de
+              crédito en café
+            </h2>
+          </div>
         </div>
       </div>
-    </section>
-    <!-- Cierre de texto principal -->
-    <hr class="my-4" />
-    <!-- Carrousel de Maquinas -->
-    <section class="my-5">
-      <div class="row">
-        <div class="col-xs-12 col-sm-12">
-          <div class="d-flex justify-content-start align-items-start ec-tabcontainer">
-            <h2 class="mr-2">Máquinas</h2>
-            <ul class="owl-nav owl-carousel owl-theme nav nav-tabs ec-tabcontainer variedades-caps" id="tabMaquinas" role="tablist">
-              <li class="nav-item" ng-repeat="unaMaquina in maquinas">
-                <a class="nav-link maquinaz" 
-                  ng-click="mostrarMaquina($index)"  data-nombremaquina='{{ unaMaquina.id }}' ng-class="($index == maquinaVisible) ? 'active' : ''">{{ unaMaquina.nombre }}</a>
-              </li>
-            </ul> 
-            
-           <select class="select-variedades" ng-model="maquinaCarouselVisible" ng-change="selectedMachineChanged();">
+
+      <hr class="my-4" />
+
+
+      <div class="mt-5 mb-3">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12">
+            <div class="d-flex justify-content-start align-items-start ec-tabcontainer">
+              <h2 class="mr-2">Máquinas</h2>
+              <ul class="owl-nav owl-carousel owl-theme nav nav-tabs ec-tabcontainer variedades-caps" id="tabMaquinas"
+                role="tablist">
+                <li class="nav-item" ng-repeat="unaMaquina in maquinas">
+                  <a class="nav-link maquinaz" ng-click="mostrarMaquina($index)"
+                    data-nombremaquina='{{ unaMaquina.id }}'
+                    ng-class="($index == maquinaVisible) ? 'active' : ''">{{ unaMaquina.nombre }}</a>
+                </li>
+              </ul>
+
+              <select class="select-variedades" ng-model="maquinaCarouselVisible" ng-change="selectedMachineChanged();">
                 <option ng-repeat="unaMaquina in maquinas" value="{{ unaMaquina.nombre }}">
                   {{ unaMaquina.nombre }}
                 </option>
-            </select> 
-            
+              </select>
+
+            </div>
           </div>
         </div>
       </div>
-      
-      <!-- Aqui empieza el carrousel -->  
-      <div class="owl-carousel owl-maquinas owl-theme ">
-        <div class="row item-maquina"  id="maquinas" ng-repeat="unaMaquina in maquinas" data-index='{{ unaMaquina.id }}' data-nombremaquina='{{ unaMaquina.nombre }}'>
-            <div class="col-xs-12 col-sm-6 text-center" >
-                <a ng-click="mostrarModal($index,false)">
-                  <div class="foto-maquina">
-                    <img src="https://www.nespresso.com/ecom/medias/sys_master/public/12370807160862/cucarda-enmaquina.png?"
-                      alt="" class="ec-cuca cuca-right" />
-                    <img ng-src="{{ getFotoDePortada(unaMaquina.id,$index).urlFoto }}" alt="{{ getFotoDePortada(unaMaquina.id,$index).altFoto }}"
-                      class="img-fluid ec-foto-maq" />
-                  </div>
-                </a>
+    </div>
+
+    <!-- Aqui empieza el carrousel -->
+    <div class="container-maquinas">
+      <div class="owl-carousel owl-maquinas owl-theme pb-4">
+        <div class="row item-maquina" id="maquinas" ng-repeat="unaMaquina in maquinas" data-index='{{ unaMaquina.id }}'
+          data-nombremaquina='{{ unaMaquina.nombre }}'>
+          <div class="col-xs-12 col-sm-6 text-center">
+            <a ng-click="mostrarModal($index,false)">
+              <div class="foto-maquina">
+                <img src=""
+                  alt="promo" class="ec-cuca cuca-right" />
+                <img ng-src="{{ getFotoDePortada(unaMaquina.id,$index).urlFoto }}"
+                  alt="{{ getFotoDePortada(unaMaquina.id,$index).altFoto }}" class="img-fluid ec-foto-maq" />
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-12 col-sm-6 align-self-center">
+            <h2 class="ec-weight-bold ">{{ unaMaquina.nombre }}</h2>
+            <p class="mt-1">Colores disponibles: </p>
+            <ul class="mt-2 colorpicker d-flex align-items-center">
+
+              <li ng-repeat="unColor in unaMaquina.colores">
+                <a class="{{ unColor.nombreColor }}" ng-class="($index == colorSeleccionado) ? 'color-active' : ''"
+                  ng-click="elegirColor($index,unaMaquina.id)"></a>
+              </li>
+            </ul>
+            <hr class="my-3">
+            <p class="mb-2"><span class="d-block ec-weight-bold">ENVÍO GRATUITO</span>
+              {{ unaMaquina.cantCuotas }} cuotas SIN INTERÉS de
+              ${{ calcularCuotas(unaMaquina.valorMaquina, unaMaquina.cantCuotas) }}</p>
+            <p><span class="d-block">Con tu compra obtené</span> <span class="ec-weight-bold">{{ unaMaquina.credito }}
+                DE CRÉDITO</span> en café.</p>
+            <hr class="my-3">
+            <div class="d-flex justify-content-start align-items-center align-items-stretch my-3">
+              <div class="align-self-center mr-2">
+                <p>Precio anterior: <span
+                    class="ec-pastPrice d-block">${{ formatearNumero(unaMaquina.precioAnterior) }}</span>
+                </p>
+              </div>
+              <div class="ec-vertical-line mx-2">
+              </div>
+              <div class="ec-price mx-2">
+                <p class="ec-text-white"><span
+                    class="ec-priceNumber">${{ formatearNumero(unaMaquina.valorMaquina) }}</span></p>
+              </div>
             </div>
-            <div class="col-xs-12 col-sm-6 align-self-center">
-              <h2 class="ec-weight-bold ">{{ unaMaquina.nombre }}</h2>
-              <ul class="mt-2 colorpicker d-flex align-items-center">
-                <li>Colores disponibles: </li>
-                <li ng-repeat="unColor in unaMaquina.colores">
-                  <a class="{{ unColor.nombreColor }}" ng-class="($index == colorSeleccionado) ? 'color-active' : ''"
-                    ng-click="elegirColor($index,unaMaquina.id)"></a>
-                </li>
-              </ul>
-              <hr class="my-3">
-              <p class="mb-2"><span class="d-block ec-weight-bold">ENVÍO GRATUITO</span>
-                {{ unaMaquina.cantCuotas }} cuotas SIN INTERÉS de
-                ${{ calcularCuotas(unaMaquina.valorMaquina, unaMaquina.cantCuotas) }}</p>
-              <p><span class="d-block">Con tu compra obtené</span> <span
-                  class="ec-weight-bold">{{ unaMaquina.credito }} DE CRÉDITO</span> en café.</p>
-              <hr class="my-3">
-              <div class="d-flex justify-content-start align-items-center align-items-stretch my-3">
-                <div class="align-self-center mr-2">
-                  <p>Precio anterior: <span
-                      class="ec-pastPrice d-block">${{ formatearNumero(unaMaquina.precioAnterior) }}</span>
-                  </p>
-                </div>
-                <div class="ec-vertical-line mx-2">
-                </div>
-                <div class="ec-price mx-2">
-                  <p class="ec-text-white"><span
-                      class="ec-priceNumber">${{ formatearNumero(unaMaquina.valorMaquina) }}</span></p>
+            <div class="d-flex align-items-center">
+              <a class="ec-boton mr-2" ng-click="mostrarModal(unaMaquina.id,false)">Más información</a>
+              <div id="{{ 'botones_maquinas_' + unaMaquina.id }}">
+                <div class="add-to-bag" data-product-id="{{ unaMaquina.colores[0].ctaCode }}" data-button-size="medium"
+                  id="btn-add-to-bag-maquinas">Agregar Máquina
                 </div>
               </div>
-              <div class="d-flex align-items-center">
-                <a class="ec-boton mr-2" ng-click="mostrarModal(unaMaquina.id,false)">Más información</a>
-                <div id="{{ 'botones_maquinas_' + unaMaquina.id }}" >
-                  <div class="add-to-bag" data-product-id="{{ unaMaquina.colores[0].ctaCode }}" data-button-size="medium"
-                    id="btn-add-to-bag-maquinas">Agregar Máquina
-                  </div>
-                </div>
-              </div>
-    
             </div>
+
+          </div>
         </div>
       </div>
-      <!-- Aqui termina el carrousel --> 
-  </div>
+    </div>
+
+    <!-- Aqui termina el carrousel -->
+
   </section>
-  <!-- Cierre de Maquinas -->
-  </div>
-  <!-- Modulo completo de Accedo a mi Crédito -->
-  <section class="container-fluid ec-gradientBG">
+
+
+  <!-- Mi Crédito -->
+  <section class="ec-gradientBG">
+
+    <!-- Steps -->
     <div class="row">
       <div class="col-12 text-center my-4">
         <h3 style="font-size: 25px; font-weight: 600; line-height: 35px">¿CÓMO ACCEDO A MI CRÉDITO?</h3>
@@ -276,54 +234,58 @@
         </div>
       </div>
     </div>
+
+    <!-- Packs Recomendados -->
+    <div class="ec-container">
+      <div class="my-4">
+        <div class="row">
+          <div class="col-12 text-center mt-5 mb-3">
+            <h3 style="font-size: 25px; font-weight: 600">PACKS RECOMENDADOS</h3>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+          <div class="col-xs-12 col-sm-6 col-xl-3 text-center mb-5">
+            <a href="modalPack50" data-toggle="modal" data-target="#modalPack50"><img
+                src="https://www.nespresso.com/ecom/medias/sys_master/public/12370806702110/packbestseller-50-frontal-v2.jpg?"
+                alt="Nombre" class="img-fluid packs" /></a>
+            <hr class="my-2 align-self-center" />
+            <h3 class="mt-2">Best Sellers</h3>
+            <span class="caption-text">50 cápsulas</span>
+            <p class="my-2"><span class="ec-priceNumber">$1.300</span></p>
+            <div class="d-flex justify-content-center flex-column">
+              <a href="modalPack50" class="ec-boton-line mb-2" data-toggle="modal" data-target="#modalPack50">Más
+                información</a>
+              <div class="add-to-bag" data-product-id="103301" data-button-size="large"></div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-xl-3 text-center mb-5">
+            <a href="modalPack100" data-toggle="modal" data-target="#modalPack100"><img
+                src="https://www.nespresso.com/ecom/medias/sys_master/public/12370807029790/packbestseller-100-frontal-v2.jpg?"
+                alt="Nombre" class="img-fluid packs" /></a>
+            <hr class="my-2 align-self-center" />
+            <h3 class="mt-2">Best Sellers</h3>
+            <span class="caption-text">100 cápsulas</span>
+            <p class="my-2"><span class="ec-priceNumber">$2.900</span></p>
+            <div class="d-flex justify-content-center flex-column">
+              <a href="modalPack100" class="ec-boton-line mb-2" data-toggle="modal" data-target="#modalPack100">Más
+                información</a>
+              <div class="add-to-bag" data-product-id="103302" data-button-size="large"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-5" />
+
+    </div>
   </section>
   <!-- Cierre de modulo completo de Accedo a mi Crédito -->
-  <div class="ec-container">
-    <!-- Inicio de Packs Recomendados -->
-    <section class="my-4">
-      <div class="row">
-        <div class="col-12 text-center mt-5 mb-3">
-          <h3 style="font-size: 25px; font-weight: 600">PACKS RECOMENDADOS</h3>
-        </div>
-      </div>
-      <div class="row d-flex justify-content-center">
-        <div class="col-xs-12 col-sm-6 col-xl-3 text-center mb-5">
-          <img
-            src="https://www.nespresso.com/ecom/medias/sys_master/public/12370806702110/packbestseller-50-frontal-v2.jpg?"
-            alt="Nombre" class="img-fluid packs" />
-          <hr class="my-2 align-self-center" />
-          <h3 class="mt-2">Best Sellers</h3>
-          <span class="caption-text">50 cápsulas</span>
-          <p class="my-2"><span class="ec-priceNumber">$1.300</span></p>
-          <div class="d-flex justify-content-center flex-column">
-            <a href="modalPack50" class="ec-boton mb-2" data-toggle="modal" data-target="#modalPack50">Más
-              información</a>
-            <div class="add-to-bag" data-product-id="103301" data-button-size="large"></div>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-xl-3 text-center mb-5">
-          <img
-            src="https://www.nespresso.com/ecom/medias/sys_master/public/12370807029790/packbestseller-100-frontal-v2.jpg?"
-            alt="Nombre" class="img-fluid packs" />
-          <hr class="my-2 align-self-center" />
-          <h3 class="mt-2">Best Sellers</h3>
-          <span class="caption-text">100 cápsulas</span>
-          <p class="my-2"><span class="ec-priceNumber">$2.900</span></p>
-          <div class="d-flex justify-content-center flex-column">
-            <a href="modalPack100" class="ec-boton mb-2" data-toggle="modal" data-target="#modalPack100">Más
-              información</a>
-            <div class="add-to-bag" data-product-id="103302" data-button-size="large"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Cierre de Packs Recomendados -->
-    <hr class="my-5" />
-    
-    <!-- Inicio de Capsulas -->
 
-    <!-- Nuevo Carrousel -->
-    <section class="my-4" id="botones_capsulas">
+  <!-- Inicio de Capsulas -->
+
+  <section class="ec-container">
+
+    <div class="my-4" id="botones_capsulas">
       <!-- categorias -->
       <div class="row">
         <div class="col-xs-12 col-sm-12">
@@ -340,12 +302,12 @@
                   class="nav-link categorias">{{ variedad.nombreVariedad }}</a>
               </li>
             </ul>
-            
-            <select class ="select-variedades" ng-model="variedadVisible" ng-change="selectedItemChanged();">
-                <option ng-repeat="unaVariedad in variedades" value="{{ unaVariedad.nombreVariedad }}">
-                  {{ unaVariedad.nombreVariedad }}
-                </option>
-            </select>            
+
+            <select class="select-variedades" ng-model="variedadVisible" ng-change="selectedItemChanged();">
+              <option ng-repeat="unaVariedad in variedades" value="{{ unaVariedad.nombreVariedad }}">
+                {{ unaVariedad.nombreVariedad }}
+              </option>
+            </select>
 
           </div>
         </div>
@@ -355,44 +317,43 @@
       <div class="owl-carousel owl-capsulaz owl-theme ec-capsulas">
         <div class="ec-item text-center" ng-repeat="unaCapsula in listCapsulas" data-variedad='{{ unaCapsula.hash }}'>
           <a ng-click="mostrarModal($index,true, unaCapsula.idVariedad)">
-            <img ng-src='{{ unaCapsula.fotos[0].urlFoto }}'
-              alt='{{ unaCapsula.fotos[0].altFoto }}' />
+            <img ng-src='{{ unaCapsula.fotos[0].urlFoto }}' alt='{{ unaCapsula.fotos[0].altFoto }}' />
           </a>
           <div class="caps-contenido">
-          <hr class="my-2 align-self-center" />
-          <h3 class="my-2">{{ unaCapsula.nombre }}</h3>
-          <div class="ec-textoCapsula">
-            <span class="caption-text">{{
+            <hr class="my-2 align-self-center" />
+            <h3 class="my-2">{{ unaCapsula.nombre }}</h3>
+            <div class="ec-textoCapsula">
+              <span class="caption-text">{{
                   unaCapsula.tipoCafe
                 }} <br></span>
-            <span class="caption-text" ng-hide="unaCapsula.intensidad == 0">Intensidad
-              {{ unaCapsula.intensidad }}</span>
-          </div>
-          <p class="my-3">
-            <span class="ec-priceNumber">${{ unaCapsula.precio }},<sup>{{
+              <span class="caption-text" ng-hide="unaCapsula.intensidad == 0">Intensidad
+                {{ unaCapsula.intensidad }}</span>
+            </div>
+            <p class="my-3">
+              <span class="ec-priceNumber">${{ unaCapsula.precio }},<sup>{{
                     formatearDecimales(unaCapsula.precioSup, 2)
                   }}</sup></span>
-          </p>
-          <div class="d-flex justify-content-center flex-row">
-            <div class="add-to-bag" data-product-id="{{ unaCapsula.ctaCode }}" data-button-size="medium"
-              id="btn-add-to-bag">Agregar Cáp
-            </div>
+            </p>
+            <div class="d-flex justify-content-center flex-row">
+              <div class="add-to-bag" data-product-id="{{ unaCapsula.ctaCode }}" data-button-size="medium"
+                id="btn-add-to-bag">Agregar Cáp
+              </div>
 
-          </div></div>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    
-  </div>
+  </section>
 
   <div class="modal ec-fade-glow" id="modalProducto" tabindex="-1" role="dialog" aria-labelledby="ec-modalProducto"
     aria-hidden="true">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content contenido-modal">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-              aria-hidden="true">x</span></button>
+              aria-hidden="true">&Cross;</span></button>
         </div>
         <div class="container-fluid p-3">
           <div class="row mb-3">
@@ -401,7 +362,8 @@
                 <div class="carousel-inner">
                   <div class="item carousel-item align-self-center" ng-class="($index == 0) ? 'active' : ''"
                     ng-repeat="unaFoto in modalProducto.fotos" data-slide-number="{{ $index }}">
-                    <img ng-src="{{ unaFoto.urlFoto }}" class="img-fluid" ng-class="(modalProducto.esCapsula == true) ? 'packs' : ''" alt="{{ unaFoto.altFoto }}" />
+                    <img ng-src="{{ unaFoto.urlFoto }}" class="img-fluid"
+                      ng-class="(modalProducto.esCapsula == true) ? 'packs' : ''" alt="{{ unaFoto.altFoto }}" />
                   </div>
                 </div>
                 <ol class='carousel-indicators' ng-hide="modalProducto.esCapsula">
@@ -458,7 +420,7 @@
                 </p>
                 <!-- Cierre Precio Capsula -->
               </div>
-              <div class="d-flex align-items-end" id="modal-add-to-bag">                
+              <div class="d-flex align-items-end" id="modal-add-to-bag">
               </div>
             </div>
           </div>
@@ -466,14 +428,15 @@
       </div>
     </div>
   </div>
+
   <!-- Modal Pack 50 -->
   <div class="modal ec-fade-glow" id="modalPack50" tabindex="-1" role="dialog" aria-labelledby="ec-modalPack50"
     aria-hidden="true">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content contenido-modal">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-              aria-hidden="true">x</span></button>
+              aria-hidden="true">&Cross;</span></button>
         </div>
         <div class="container-fluid">
           <div class="row mb-3">
@@ -511,11 +474,11 @@
   <!-- Modal Pack 50 -->
   <div class="modal ec-fade-glow" id="modalPack100" tabindex="-1" role="dialog" aria-labelledby="ec-modalPack100"
     aria-hidden="true">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content contenido-modal">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-              aria-hidden="true">x</span></button>
+              aria-hidden="true">&Cross;</span></button>
         </div>
         <div class="container-fluid">
           <div class="row mb-3">
@@ -550,16 +513,16 @@
       </div>
     </div>
   </div>
-  <!-- /.container -->
-  <script src="https://www.nespresso.com/ecom/medias/sys_master/public/12351842811934/jquery331.js"></script>
-  <script src="https://www.nespresso.com/ecom/medias/sys_master/public/12351841927198/bts.js"></script>
 
-  <script src="https://www.nespresso.com/ecom/medias/sys_master/public/12370807554078/owl.carousel.js?"></script>
-  <script src="js/angularjs.js"></script> <!-- Angular -->
+  <!-- /.container -->
+  <script src="js/jquery331.js"></script>
+  <script src="js/bts.js"></script>
+  <script src="js/owl.carousel.js?"></script>
+
+  <!-- Angular -->
+  <script src="js/angularjs.js"></script>
   <script src="js/HotSaleApp.js"></script>
   <script src="js/countdown.js"></script>
-  <script src="js/counterBomba.js"></script>
-
 
   <script>
     $(document).ready(function () {
@@ -568,81 +531,96 @@
       }, 1000);
     });
   </script>
-  <script>
 
-  </script>
   <script>
     $(document).ready(function () {
-      $(".owl-nav").owlCarousel({
+      var $nav = $('.owl-nav');
+      $nav.find('a.nav-link').each(function (index) {
+        $(this).attr('data-position', index);
+      });
+
+      $nav .owlCarousel({
         loop: false,
         dots: false,
-        margin: 5, 
+        margin: 5,
         autoplay: false,
-        autoWidth:true,
+        center: true,
+        // autoWidth: true,
         responsiveClass: true,
         responsive: {
           0: {
             items: 2,
             nav: true,
-            autoWidth:true,
+            autoWidth: true,
           },
           600: {
             items: 3,
             nav: true
           },
           1000: {
-            items: 5,
+            items: 6,
             nav: true
           }
         }
+      });
+      $('.nav-link').on('click', function () {
+        // see https://owlcarousel2.github.io/OwlCarousel2/docs/api-events.html#to-owl-carousel
+        var $speed = 300; // in ms
+        $nav.trigger('to.owl.carousel', [$(this).data('position'), $speed]);
       });
     });
     $(document).ready(function () {
       $(".owl-capsulaz").owlCarousel({
         loop: true,
         dots: false,
-        margin: 25,
+        margin: 16,
         autoplay: false,
         center: true,
-        stagePadding: 25,
+        stagePadding: 24,
         responsiveClass: true,
         items: 1,
-        nav: false,       
+        nav: true,
         responsive: {
           500: {
             items: 3,
-            startPosition:1
+            startPosition: 1
           },
           1000: {
             items: 5,
-            margin:10,
-            stagePadding:50,
-            autoWidth: true
-            
+            margin: 10,
+            stagePadding: 50,
+            autoWidth: true,
+            nav:false
+
+          }
+        }
+      });
+
+      $(".owl-maquinas").owlCarousel({
+        loop: true,
+        dots: false,
+        margin: 16,
+        autoplay: false,
+        center: true,
+        responsiveClass: true,
+        stagePadding: 16,
+        items: 1,
+        nav: true,
+        responsive: {
+          700: {
+            stagePadding: 64,
+          },
+          1200: {
+            stagePadding: 0,
+            nav:false
           }
         }
       });
     });
 
     $(document).ready(function () {
-      $(".owl-maquinas").owlCarousel({
-        loop: false,
-        dots: false,
-        margin: 15,
-        autoplay: false,
-        center: true,       
-        responsiveClass: true,
-        items: 1,
-        nav: false,
-        responsive: {
-          700: {
-            stagePadding: 25,
-          }
-        }
-      });
+
     });
-
-
   </script>
 </body>
 
