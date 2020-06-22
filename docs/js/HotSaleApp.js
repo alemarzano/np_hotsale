@@ -876,7 +876,7 @@ angular.module('HotSaleApp', [])
             $scope.maquinaVisible = cualMaquina;
             $('#botones_maquinas_' + cualMaquina).html('');
             $('#botones_maquinas_' + cualMaquina).html('<div class="add-to-bag" data-product-id="' + $scope.maquinas[$scope.maquinaVisible].colores[0].ctaCode + '" data-button-size="medium" id="btn-add-to-bag-maquinas">Agregar Máquina</div>');
-            // mosaic.initializeAllFreeHTMLModules(document.getElementById('botones_maquinas_' + cualMaquina));
+            mosaic.initializeAllFreeHTMLModules(document.getElementById('botones_maquinas_' + cualMaquina));
             $('.owl-maquinas').trigger("to.owl.carousel", [cualMaquina, 250]);
 
         }
@@ -888,7 +888,7 @@ angular.module('HotSaleApp', [])
             $scope.maquinaOn = idMaqui;
             $('#botones_maquinas_' + idMaqui).html('');
             $('#botones_maquinas_' + idMaqui).html('<div class="add-to-bag" data-product-id="' + $scope.maquinas[$scope.maquinaOn].colores[cual].ctaCode + '" data-button-size="medium" id="btn-add-to-bag-maquinas">Agregar Máquina </div>');
-            // mosaic.initializeAllFreeHTMLModules(document.getElementById('botones_maquinas_' + idMaqui));
+            mosaic.initializeAllFreeHTMLModules(document.getElementById('botones_maquinas_' + idMaqui));
         }
         $scope.elegirColorModal = function (cual) {
             $scope.modalProducto.fotos = $scope.maquinas[$scope.maquinaActiva].colores[cual].fotos;
@@ -896,7 +896,7 @@ angular.module('HotSaleApp', [])
             $('#btn-add-to-bag-modal').data('product-id', $scope.maquinas[$scope.maquinaActiva].colores[cual].ctaCode);
             $('#modal-add-to-bag').html('');
             $('#modal-add-to-bag').html('<div class="add-to-bag" data-product-id="' + $scope.maquinas[$scope.maquinaActiva].colores[cual].ctaCode + '" data-button-size="medium" id="btn-add-to-bag-modal">Agregar al carrito</div>');
-            // mosaic.initializeAllFreeHTMLModules(document.getElementById('modal-add-to-bag'));
+            mosaic.initializeAllFreeHTMLModules(document.getElementById('modal-add-to-bag'));
         }
         $scope.formatearNumero = function (x) {
             return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
@@ -915,7 +915,7 @@ angular.module('HotSaleApp', [])
             return Array(Math.max(digits - String(number).length + 1, 0)).join(0) + number;
         }
         $scope.reiniciarBotonesDeCompra = function (paraId) {
-            // mosaic.initializeAllFreeHTMLModules(document.getElementById(paraId));
+            mosaic.initializeAllFreeHTMLModules(document.getElementById(paraId));
         }
 
         $scope.generarListadoCapsulas = function () {
