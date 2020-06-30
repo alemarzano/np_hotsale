@@ -1,6 +1,7 @@
 sources
 *.xlsx
 *.pptx
+*.zip
 *.psd
 docs/images/capsulas
 docs/images/icons
@@ -12,3 +13,4 @@ docs/js/bts.js
 docs/js/counterBomba.js
 docs/js/jquery331.js
 docs/js/owl.carousel.js
+docs/js/HotSaleApp.js

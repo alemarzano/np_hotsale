@@ -4394,7 +4394,7 @@ body {
   cursor: pointer;
 }
 
-/* Tamaños */
+/* TamaÃ±os */
 
 h2 {
   font-size: 1.7em;
@@ -4606,7 +4606,7 @@ h2 {
 
 
 header.ec-header {
-  background-image: url("../images/hero-image.jpg");
+  background-image: url("https://www.nespresso.com/ecom/medias/sys_master/public/13418411720734/hero-image.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -4623,7 +4623,7 @@ header.ec-header {
 
 @media (max-width: 769px) {
   header.ec-header {
-    background-image: url("../images/hero-image-mobile.jpg");
+    background-image: url("https://www.nespresso.com/ecom/medias/sys_master/public/13418412638238/hero-image-mobile.jpg");
     height: 400px;
     /* margin-top: 300px; */
   }
@@ -4649,6 +4649,7 @@ header.ec-header {
 
 .ec-white {
   background-color: #f3f0e7;
+  border: 1px solid #c7c7c7!important;
 }
 
 .ec-silver {
@@ -4703,7 +4704,7 @@ header.ec-header {
   -webkit-perspective: 1000px;
   perspective: 1000px;
   text-align: center;
-  /* height: 262px; */
+  min-height: 262px;
 }
 
 .ec-grid .carousel-item.active,
@@ -5193,6 +5194,7 @@ sup {
   /* justify-content: space-between;
 flex-wrap: nowrap;
 overflow-x: scroll; */
+  /* padding: 24px 0 40px; */
   min-height: 380px;
 }
 
@@ -5613,9 +5615,9 @@ no-white {
   margin: 0 15px !important;
 }
 
-.owl-theme .owl-nav [class*='owl-']:hover {
+.owl-theme .owl-nav [class*='owl-']:hover, .owl-theme .owl-nav [class*='owl-']:active, .owl-theme .owl-nav [class*='owl-']:focus {
   color: #ff5001 !important;
-  background: transparent !important;
+  background: #2e2e2e !important;
 }
 
 #tabMaquinas .owl-stage-outer {
@@ -5639,7 +5641,6 @@ no-white {
 /* .owl-capsulaz .owl-nav button {
   position: relative !important;
   top: inherit !important;
-
 } */
 
 .owl-prev {
@@ -5647,13 +5648,14 @@ no-white {
   margin-left: 0 !important;
 }
 
-.owl-carousel .owl-nav button.owl-next {
+.owl-capsulaz .owl-nav button.owl-next {
   margin-right: 0 !important;
+  right: 0;
 }
 
-.owl-carousel .owl-nav button.owl-prev {
-  /*! margin-left: 0 !important; */
-  /*! left: 0; */
+.owl-capsulaz .owl-nav button.owl-prev {
+  margin-left: 0!important;
+  left: -8px;
 }
 
 .owl-carousel .owl-nav button.owl-next,
@@ -5665,7 +5667,8 @@ no-white {
   width: 32px;
   opacity: 1;
   box-shadow: 2px 2px 8px 1px rgba(200, 200, 200, .5);
-  padding: 80x 0;
+  /* padding: 80px 0; */
+  transition: .3s;
 }
 
 .shine {
@@ -5819,12 +5822,12 @@ no-white {
     background-color: transparent;
     -moz-appearance: none;
     appearance: none;
+    -webkit-appearance: none;
     padding-left: 4px;
     background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDMwLjcyNyAzMC43MjciIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDMwLjcyNyAzMC43Mjc7IiB4bWw6c3BhY2U9InByZXNlcnZlIj48Zz48Zz4KCTxwYXRoIGQ9Ik0yOS45OTQsMTAuMTgzTDE1LjM2MywyNC44MTJMMC43MzMsMTAuMTg0Yy0wLjk3Ny0wLjk3OC0wLjk3Ny0yLjU2MSwwLTMuNTM2YzAuOTc3LTAuOTc3LDIuNTU5LTAuOTc2LDMuNTM2LDAgICBsMTEuMDk1LDExLjA5M0wyNi40NjEsNi42NDdjMC45NzctMC45NzYsMi41NTktMC45NzYsMy41MzUsMEMzMC45NzEsNy42MjQsMzAuOTcxLDkuMjA2LDI5Ljk5NCwxMC4xODN6IiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBjbGFzcz0iYWN0aXZlLXBhdGgiIHN0eWxlPSJmaWxsOiNCRkJGQkYiIGRhdGEtb2xkX2NvbG9yPSIjMDAwMDAwIj48L3BhdGg+CjwvZz48L2c+IDwvc3ZnPg==);
     background-position: 95% 60%;
     background-size: 12px;
     background-repeat: no-repeat;
-
   }
 
   .ec-grid .ec-tabcontainer {
@@ -5839,6 +5842,7 @@ no-white {
 
   .owl-maquinas .owl-stage {
     min-height: 365px;
+    padding: 24px 0;
   }
 
   .ec-capsulas .ec-item,
@@ -5920,14 +5924,18 @@ no-white {
   }
 
   .owl-capsulaz .owl-stage-outer {
-    overflow: inherit;
+    /* overflow-y: inherit !important; */
+    padding: 8px 0 32px;
   }
 
   .owl-maquinas .owl-nav,
   .owl-capsulaz .owl-nav {
     position: absolute;
-    top: 40%;
-    width: 100%;
+    top: 36%;
+    width: 102%;
+    left: 0;
+    right: 0;
+    margin: auto;
   }
 
   .owl-maquinas .owl-nav .owl-prev,
