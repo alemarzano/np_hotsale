@@ -50,9 +50,10 @@ html {
   background-color: #ffffff;
 }
 
-body {
+body, #main .html {
   color: #474646;
   font-size: 14px;
+  background-color:white;
 }
 
 
@@ -4606,7 +4607,7 @@ h2 {
 
 
 header.ec-header {
-  background-image: url("https://www.nespresso.com/ecom/medias/sys_master/public/13418411720734/hero-image.jpg");
+  background-image: url("https://www.nespresso.com/ecom/medias/sys_master/public/13439163760670/hero-image.jpg?");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -4623,7 +4624,7 @@ header.ec-header {
 
 @media (max-width: 769px) {
   header.ec-header {
-    background-image: url("https://www.nespresso.com/ecom/medias/sys_master/public/13418412638238/hero-image-mobile.jpg");
+    background-image: url("https://www.nespresso.com/ecom/medias/sys_master/public/13439163826206/hero-image-mobile.jpg?");
     height: 400px;
     /* margin-top: 300px; */
   }
@@ -5298,6 +5299,7 @@ overflow-x: scroll; */
 .ec-grid .nav-link {
   display: block;
   padding: 0.5rem;
+  color: grey;
 }
 
 .ec-grid .nav-link.disabled {
@@ -5599,7 +5601,7 @@ no-white {
 }
 
 .owl-theme .owl-nav {
-  margin-top: -34px !important;
+  /*! margin-top: -34px !important; */
 }
 
 .owl-nav span {
@@ -5621,7 +5623,7 @@ no-white {
 }
 
 #tabMaquinas .owl-stage-outer {
-  width: 86%;
+  /*! width: 86%; */
   margin: auto;
   z-index: 10;
 }
@@ -5629,13 +5631,26 @@ no-white {
 .owl-theme .owl-nav {
   position: relative;
   height: 36px;
-  /*! width: 95%; */
+
+  /*! background-color: transparent; */
 }
 
+.nav-tabs .owl-nav {
+   width: 120px; 
+  margin-left: auto;
+  display: flex;
+  justify-content: space-around; 
+  align-items: center;
+  height:48px;
+  margin-top:0;
+}
+.owl-theme.nav-tabs .owl-nav [class*="owl-"] {
+  margin:0!important;  
+}
 
 .owl-capsulaz .owl-nav {
   display: flex;
-  justify-content: flex-end
+  justify-content: flex-end;
 }
 
 /* .owl-capsulaz .owl-nav button {
@@ -5667,16 +5682,19 @@ no-white {
   width: 32px;
   opacity: 1;
   box-shadow: 2px 2px 8px 1px rgba(200, 200, 200, .5);
-  /* padding: 80px 0; */
+  padding: 80px 0;
   transition: .3s;
 }
 
 .shine {
-  -webkit-animation-duration: 1s;
-  -webkit-animation-fill-mode: forwards;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-name: Shimmer;
-  -webkit-animation-timing-function: linear;
+  /*! position: absolute; */
+  top: -3px;
+  background-color: white !important;
+  width: 32px;
+  opacity: 1;
+  box-shadow: 2px 2px 8px 1px rgba(200, 200, 200, .5);
+  /* padding: 80px 0; */
+  transition: .3s;
 }
 
 
@@ -5857,6 +5875,16 @@ no-white {
     background-color: inherit;
     box-shadow: none;
   }
+    .owl-maquinas .owl-nav,
+  .owl-capsulaz .owl-nav {
+    position: absolute;
+    top: 36%;
+    width: 102%;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
 }
 
 
@@ -5928,15 +5956,6 @@ no-white {
     padding: 8px 0 32px;
   }
 
-  .owl-maquinas .owl-nav,
-  .owl-capsulaz .owl-nav {
-    position: absolute;
-    top: 36%;
-    width: 102%;
-    left: 0;
-    right: 0;
-    margin: auto;
-  }
 
   .owl-maquinas .owl-nav .owl-prev,
   .owl-capsulaz .owl-nav .owl-prev {
