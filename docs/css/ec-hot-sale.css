@@ -50,7 +50,7 @@ html {
   background-color: #ffffff;
 }
 
-body, #main .html {
+body, #main .free-html {
   color: #474646;
   font-size: 14px;
   background-color:white;
@@ -4593,9 +4593,9 @@ h2 {
     margin-bottom: -5px;
   }
 
-  .owl-carousel .owl-stage-outer {
+  /* .owl-carousel .owl-stage-outer {
     overflow: inherit !important;
-  }
+  } */
 }
 
 .ec_counter .ec_label {
@@ -4706,6 +4706,9 @@ header.ec-header {
   perspective: 1000px;
   text-align: center;
   min-height: 262px;
+}
+.ec-grid .carousel-item.item-cap {
+  min-height:180px;
 }
 
 .ec-grid .carousel-item.active,

@@ -8,6 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7" />
   <!-- Estilos ECommerce Nespresso -->
   <!-- <link href="https://www.nespresso.com/ecom/medias/sys_master/public/13418773872670/ec-hot-sale.css" rel="stylesheet" /> -->
+
   <link href="css/ec-hot-sale.css" rel="stylesheet" />
   <link rel="stylesheet"
   href="https://www.nespresso.com/ecom/medias/sys_master/public/12370805981214/owl.carousel.min.css?" />
@@ -358,12 +359,13 @@
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
               aria-hidden="true">&Cross;</span></button>
         </div>
-        <div class="container-fluid p-3">
+        <div class="container-fluid px-3">
           <div class="row mb-3">
             <div class="col-xs-12 col-sm-6">
               <div id="vistasProducto" class="carousel slide foto-maquina">
                 <div class="carousel-inner">
-                  <div class="item carousel-item align-self-center" ng-class="($index == 0) ? 'active' : ''"
+                  <!-- <div ng-class="($index == 0) ? 'active' : ''" ></div> -->
+                  <div class="item carousel-item align-self-center " ng-class="{active: $index == 0, 'item-cap':modalProducto.esCapsula}"
                     ng-repeat="unaFoto in modalProducto.fotos" data-slide-number="{{ $index }}">
                     <img ng-src="{{ unaFoto.urlFoto }}" class="img-fluid"
                       ng-class="(modalProducto.esCapsula == true) ? 'packs' : ''" alt="{{ unaFoto.altFoto }}" />
@@ -524,8 +526,7 @@
 
   <!-- Angular -->
   <script src="https://www.nespresso.com/ecom/medias/sys_master/public/13418780065822/angularjs.js"></script>
-  <!-- <script src="https://www.nespresso.com/ecom/medias/sys_master/public/13419078942750/HotSaleApp.js"></script> -->
-  <script src="js/HotSaleApp.js"></script>
+  <script src="https://www.nespresso.com/ecom/medias/sys_master/public/13419078942750/HotSaleApp.js"></script>
   <script src="https://www.nespresso.com/ecom/medias/sys_master/public/13419072978974/countdown.js"></script>
 
   <script>
@@ -549,19 +550,21 @@
         margin: 5,
         autoplay: false,
         center: true,
-        nav: true,
         // autoWidth: true,
         responsiveClass: true,
         responsive: {
           0: {
             items: 2,
+            nav: true,
             autoWidth: true,
           },
           600: {
             items: 3,
+            nav: true
           },
           1000: {
             items: 6,
+            nav: true
           }
         }
       });
@@ -578,7 +581,7 @@
         margin: 16,
         autoplay: false,
         center: true,
-        stagePadding: 24,
+        stagePadding: 32,
         responsiveClass: true,
         items: 1,
         nav: true,
@@ -590,7 +593,7 @@
           1000: {
             items: 5,
             margin: 10,
-            stagePadding: 50,
+            stagePadding: 48,
             autoWidth: true,
             nav:false
 
